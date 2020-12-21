@@ -17,17 +17,19 @@ public class homework1 {
         double d = 5.6;
         boolean bo = true;
         System.out.println("\nЗадание № 3");
-        Virazh();
+        virazh();
         System.out.println("\nЗадание № 4");
-        System.out.println(ChekSum());
+        System.out.println(chekSum());
         System.out.println("\nЗадание № 5");
-        Proverka();
+        proverka();
         System.out.println("\nЗадание № 6");
-        System.out.println(ProverkaTF());
+        System.out.println(proverkaTF());
         System.out.println("\nЗадание № 7");
-        Imy();
+        String a = "Никита";
+        inname(a);
+       /*imy(a);*/
        System.out.println("\nЗадание № 8");
-        Year();
+        year();
         scanner.close();
     }
 
@@ -37,7 +39,7 @@ public class homework1 {
      *
      */
 
-    static void Virazh() {
+    static void virazh() {
         System.out.println("Введите a,b,c,d для вычесления: ");
         float a = scanner.nextFloat();
         float b = scanner.nextFloat();
@@ -54,7 +56,7 @@ public class homework1 {
      *
      */
 
-    public static boolean ChekSum() {
+    public static boolean chekSum() {
         System.out.println("Введите два числа для сложения: ");
         int a = scanner.nextInt();
         int b = scanner.nextInt();
@@ -69,7 +71,7 @@ public class homework1 {
      *
      */
 
-    public static void Proverka() {
+    public static void proverka() {
         System.out.println("Введите число для проверки положительное или нет");
         int a = scanner.nextInt();
         if (a>=0){
@@ -85,7 +87,7 @@ public class homework1 {
      */
 
 
-    public static boolean ProverkaTF()
+    public static boolean proverkaTF()
     {
         System.out.println("Введите число для проверки правда положительное или нет ");
         int a = scanner.nextInt();
@@ -97,13 +99,19 @@ public class homework1 {
      *
      */
 
-    public static void Imy()
+
+    public static void inname(String name)
+    {
+        System.out.println("Привет," + name + "!");
+    }
+
+   /* public static void imy()
     {
         System.out.println("Введите имя: ");
         String a=scanner.nextLine();
         System.out.println("Привет," + a + "!");
     }
-
+*/
 
     /***
      * 8 задание
@@ -111,7 +119,7 @@ public class homework1 {
      *
      */
 
-    public static void Year()
+    public static void year()
     {
         System.out.println("Введите год");
         int year=scanner.nextInt();
