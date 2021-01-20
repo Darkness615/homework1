@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class homework1 {
 
-
     
     static Scanner scanner = new Scanner(System.in);
 
